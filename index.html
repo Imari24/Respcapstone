@@ -17,32 +17,150 @@
 </head>
 <body>
     <!----Header Section---->
-    <header class="main-header">
-    <h4 class="logo">Imari</h4>
-    <nav class="nav-links">
-      <ul>
-        <li><a href="">Resume</a></li>
-        <li><a href="">Projects</a></li>
-        <li><a href="">About Me</a></li>
-        <li><a href="">Contact Me</a></li>
-      </ul>
-    </nav>
+    <header id="Home" class="main-header">
+      <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#0096ff"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>   
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#Resume">Resume</a></li>
+            <li><a href="About-Me">About Me</a></li>
+            <li><a href="#Projects">Projects</a></li>
+            <li><a href="#Contact-Me">Contact Me</a></li>
+        </ul>
+        <ul>
+        <li><a href="">ImariX</a></li>   
+        <li class="hideOnMobile"><a href="#">Home</a></li>
+        <li class="hideOnMobile"><a href="#Resume">Resume</a></li>
+        <li class="hideOnMobile"><a href="#About-Me">About Me</a></li>
+        <li class="hideOnMobile"><a href="#Projects">Projects</a></li>
+        <li class="hideOnMobile"><a href="#Contact-Me">Contact Me</a></li>
+        <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#0096ff"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+    </ul>
+</nav>
+    
     </header>
 
 <!----Main Section---->    
 <div class="main-section">
-    <h1 class="main-text">Hi I'm Imariabe Sumaila</h1>
-    <h2 class="under-text">Front End Developer</h2>
+    <h1 class="main-text text">Hi I'm <span class="name">Imariabe Sumaila</span></h1>
+    <h2 class="under-text text">Front End Developer</h2>
     <p class="main-paragraph">I have been a Front End Developer for a year now and I have
         built over 6 websites so far. I bring a lot of creativity to the table 
         and I can't wait for what's next.
     </p>
-    <button>Download CV</button>
+    <button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-circle" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z"/>
+    </svg> Download CV</button>
     <button class="btn-next">Hire Me Now!</button>
+    <img src="Images/titled.png" alt="profile image" height="600" class="profile-image">
 </div>
 
+<!----Resume Page -->
+<div id="Resume" class="container">
+  <h2 class="resumeHeading">My Resume</h2>
+<div class="row">
+  <div class="column">
+    <h3>Educational Background</h3>
+    <ul>
+      <li>WAEC and NECO from Evangel International School</li>
+      <li>National Diploma In Computer Science</li>
+      <li>Higher National Diploma in Computer Science</li>
+    </ul>
+    <a href="" class="more-button">Read more...</a>
+   </div>
+  <div class="column">
+    <h3>Work Experiences</h3>
+    <p class="paragragh-headings">Social Media Manager at Heartsonglive Radio Edinburgh</p>
+    <ul>
+      <li>Worked with Team to develop content and style guide to ensure uniformity and consistency across all platforms.
+      </li>
+      <li>Developed and implemented content calendars based on trends. </li>
+      <li>Worked with Design Team to ensure contents that appealed to our audiences.</li>
+     </ul>
+     <a href="" class="more-button">Read more...</a>
+     <!---<p class="paragragh-headings">Digital Media Manager at Sprout Digital</p>
+     <ul>
+      <li>Led the content creation process for Instagram reels and TikTok videos.
+      </li>
+      <li>Wrote and edited copies for a variety of channels. </li>
+      <li>Managed social media accounts for company pages and various clients.</li>
+     </ul>
+    --->
+    </div>
+    
+  <div class="column">
+    <h3>Skills</h3>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>Canva</li>
+      <li>Video Editing</li>
+      <li>Photography</li>
+      <li>Content Creation</li>
+      <li>Social Media Management</li>
+      <li>Customer Support</li>
+    </ul>
+    <a href="" class="more-button">Read more...</a>
+  </div>
+ </div>
+</div>
+
+<section id="Projects" class="project-page">
+<div class="grid-container">
+  <div class="first card"> <a href=""><img src="Images/graphics2.jpeg" alt="" height="300px" width="300px" class="green"></a></div>
+  <div class="card"><a href=""><img src="Images/graphics.jpeg" alt="" height="300px" width="300px" class="green"></a></div>
+  <div class="card"><a href=""><img src="Images/piriesellars2 ★.jpeg" alt="" height="300px" width="300px" class="green"></a> </div>
+  <div class="card"> <a href=""><img src="Images/Malika Favre.jpeg" alt="" height="300px" width="300px" class="green"></a></div>
+</div>
+<h2 class="project-heading">My Projects</h2>
+</section>
 
 
+
+
+<div id="About-Me" class="about me">
+  <h2 class="about-me">About Me</h2>
+  <div class="about-me-too"><p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. 
+    </p><p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+</div>
+<div class="aboutme-buttons"><button>Contact Me</button>
+  <button class="right-aboutme-button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-circle" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z"/>
+  </svg> Download CV</button>
+ </div>
+  
+ </div>
+ 
+ 
+ <div class="containers">
+  <footer class="py-3 my-4">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="#Home" class="nav-link px-2 text-body-secondary">Home</a></li>
+      <li class="nav-item"><a href="#Resume" class="nav-link px-2 text-body-secondary">Resume</a></li>
+      <li class="nav-item"><a href="#Projects" class="nav-link px-2 text-body-secondary">Projects</a></li>
+      <li class="nav-item"><a href="#About-Me" class="nav-link px-2 text-body-secondary">About Me</a></li>
+      <li class="nav-item"><a href="#About-Me" class="nav-link px-2 text-body-secondary">Contact Me</a></li>
+    </ul>
+    <p class="text-center text-body-secondary">© 2024 Imari</p>
+  </footer>
+</div>
+ 
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+<script>
+  function showSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'flex'
+  }
+  function hideSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'none'
+  }
+</script>
+</body>
+</html>
 
 
 
