@@ -1,5 +1,5 @@
 body{
-    background-image: url(Images/Imari\ \(2\).png);
+    background-image: url(Images/Imari\ \(4\).png);
     background-size: cover;
     font-family:Arial, Helvetica, sans-serif;
     font-size: 20px;
@@ -10,7 +10,68 @@ body{
     margin: 0;
     padding: 0;
 }
-.logo{
+nav{
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+}
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav li{
+    height: 50px;
+
+}
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+nav a:hover{
+    background-color: #f0f0f0;
+}
+nav li:first-child{
+    margin-right: auto;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.418);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.menu-button{
+    display: none;
+}
+
+@media(max-width:800px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: block ;
+    }  
+}
+@media(max-width:400px){
+    .sidebar{
+        width: 100%;
+    }
+}
+/*.logo{
     font-size:30px;
     margin: 20px;
     margin-left: 80px;
@@ -25,29 +86,34 @@ li, a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 10px;
+    margin: 20px 80px;
+}
+.name{
+    color: rgb(46, 156, 228);
 }
 .nav-links{
     list-style: none;
 }
 .nav-links li{
     display: inline-block;
-    padding: 0 40px;
+    padding: 0 30px;
+    font-size: 20px;
 }
 .nav-links li a{
-    color: rgb(42, 155, 144);
+    color: rgb(46, 156, 228);
 }
 .nav-links li a:hover{
-    color: rgb(207, 156, 208);
-    border: 1px solid rgb(137, 211, 199);
+    color: rgb(205, 225, 222);
+    border: 1px solid rgb(205, 225, 222);
     padding: 15px;
     border-radius: 10px;
-}
+}*/
 .main-section{
     width: 700px;
     padding: 50px;
-    margin-left: 200px;
+    margin-left: 160px;
     margin-top: 100px;
+    margin-bottom: 150px;
 }
 .main-text{
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -59,20 +125,338 @@ li, a {
 }
 .main-paragraph{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 17px;
+    font-size: 18px;
+    margin-top: -17px;
+    margin-bottom: 25px;
 }
 button{
-    background: rgb(163, 230, 210);
+    background: rgb(46, 156, 228);
     padding: 10px;
     border-radius: 10px;
     color: rgb(0, 0, 0);
-    border: 1px solid rgb(236, 185, 238);
+    border: 1px solid rgb(46, 156, 228);
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .btn-next{
     margin-left: 20px;
 }
 button:hover{
-    background-color: rgb(244, 173, 232);
-    border: 1px solid rgb(163, 230, 210); 
+    background-color: rgb(205, 225, 222);
+    border: 1px solid rgb(46, 156, 228); 
 }
+.profile-image{
+    position: absolute;
+    margin-top: -300px;
+    margin-left: 500px;
+    border: 1px dotted rgb(46, 156, 228);
+    border-radius: 60%;
+}
+.container{
+    background-color: rgb(247, 247, 247);
+    padding: 30px;
+    height: 70vh;
+    border-radius: 40px;
+}
+.row{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 500px 500px 500px;
+    gap: 100px;
+
+}
+h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+    color: rgb(46, 156, 228);
+    font-size: 30px;
+    
+}
+h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+.column{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    line-height: 27px;
+    
+}
+.paragragh-headings{
+    font-weight: 600;
+    
+}
+li{
+    font-size: 17px;
+}
+.more-button{
+    color: rgb(46, 156, 228);
+}
+.more-button:hover{
+    color: rgb(151, 223, 213);
+}
+.about{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 150px;
+    margin: auto;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 300px 3px ;
+    grid-template-rows: 300px 300px;
+    gap: 10px;
+    margin-top: 80px;
+    margin-left: 200px;
+}
+.project-heading{
+    display: inline-block;
+    float: right;
+    margin-top: -330px;
+    margin-right: 200px;
+}
+.green{
+    border-radius: 5px;
+}
+.about{
+    padding:0;
+    margin-top:100px;
+}
+.about-me{
+    margin-top: 50px;
+}
+.about-me-too{
+    width: 700px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.aboutme-buttons{
+    position: absolute;
+    margin-top: 180px;
+    margin-right: 43px;
+}
+.right-aboutme-button{
+    margin-left: 20px;
+}
+.containers{
+    margin-top: 200px;
+    
+}
+.footer-nav{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+@media(width <= 480px) {
+    body{
+        background: none;
+    }
+    .main-section{
+        display: block;
+        width:100%;
+        text-align: center;
+        margin: auto;
+        margin-top: 300px;
+    }
+    .main-text{
+        font-size: 2.0rem;
+        font-weight: 600;
+    }
+    .under-text{
+        font-size: 25px;
+    }
+    .main-paragraph{
+        font-size: 18px;
+        margin-top: -17px;
+        margin-bottom: 25px;
+    }
+    button{
+        font-size: 15px;
+        margin: auto;
+        text-align: center;
+    }
+    .profile-image{
+        position: relative;
+        height: 300px;
+        margin-left: -10px;
+        margin-top: -1000px;
+        border: 1px dotted rgb(46, 156, 228);
+        border-radius: 60%;
+    }
+
+    .container{
+        background: none;
+        display: flex;
+        height: 100%;
+        padding: 10px;
+        margin-top: 60px;
+    }
+    .resumeHeading{
+        display: block;
+        text-align: center;
+        position: absolute;
+        margin: -50px auto;
+        width: 100%;
+    }
+   
+    .row{
+        display: flex;
+    }
+    .column{
+        display: block;
+        line-height: 27px;
+        text-align: center;
+    }
+    h3{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: 600;
+        color: rgb(46, 156, 228);
+        font-size: 30px;
+        
+    }
+    .grid-container{
+        display:block;
+       width: 100%;
+       margin: auto;
+       border: none;
+    }
+    .project-heading{
+        display: block;
+        
+    }
+    .green{
+        display: flex;
+        gap: 10px;
+        width: 100%;
+        height: 100%;
+        margin-top:10%;
+    }
+    .about{
+        padding:0;
+        margin-top:100px;
+        display: block;
+        text-align: center;
+        font-size: 15px;
+    }
+    
+    .about-me-too{
+        width: 100%;
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    .aboutme-buttons{
+    width: 80%;
+    margin: auto;
+    margin-top: 25px;
+    }
+    
+   
+    }
+    @media (min-width: 481px) and (max-width: 1200px) {
+        body{
+            background: none;
+        }
+        .main-section{
+            display: block;
+            width:100%;
+            text-align: center;
+            margin: auto;
+            margin-top: 300px;
+        }
+        .main-text{
+            font-size: 2.3rem;
+            font-weight: 600;
+        }
+        .under-text{
+            font-size: 27px;
+        }
+        .main-paragraph{
+            font-size: 19px;
+            margin-top: -17px;
+            margin-bottom: 25px;
+        }
+        button{
+            font-size: 19px;
+            width: 40%;
+            margin: auto;
+    
+        }
+        .profile-image{
+            position: relative;
+            height: 300px;
+            margin-left: -10px;
+            margin-top: -890px;
+            border: 1px dotted rgb(46, 156, 228);
+            border-radius: 60%;
+        }
+    
+        .container{
+            background: none;
+            display: block;
+            height: 100%;
+            padding: 10px;
+            margin-top: 60px;
+        }
+        .resumeHeading{
+            display: block;
+            text-align: center;
+            margin: 30px auto;
+            width: 100%;
+        }
+       
+        .row{
+            display: flex;
+        }
+        .column{
+            display: block;
+            line-height: 27px;
+            text-align: center;
+        }
+        h3{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: 600;
+            color: rgb(46, 156, 228);
+            font-size: 30px;
+            
+        }
+        .grid-container{
+           display:block;
+           width: 100%;
+           margin: auto;
+           border: none;
+        }
+        .project-heading{
+            display: block;
+            
+        }
+        .green{
+            display: flex;
+            gap: 10px;
+            width: 100%;
+            height: 100%;
+            margin-top:10%;
+        }
+        .about{
+            padding:0;
+            margin-top:100px;
+            display: block;
+            text-align: center;
+            font-size: 15px;
+        }
+        
+        .about-me-too{
+            width: 100%;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        .aboutme-buttons{
+        width: 80%;
+        margin: auto;
+        margin-top: 25px;
+        }
+      }
