@@ -250,7 +250,7 @@ li{
     font-family: Arial, Helvetica, sans-serif;
     color: black;
 }
-@media(width<= 480px) {
+@media(width<= 600px) {
     body{
         background: none;
     }
@@ -362,7 +362,7 @@ li{
     
    
     }
-    @media (min-width: 481px) and (max-width: 1200px) {
+    @media (min-width: 601px) and (max-width: 1200px) {
         body{
             background: none;
         }
